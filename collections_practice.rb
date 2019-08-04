@@ -5,14 +5,7 @@ end
 
 def sort_array_desc(another_number_list)
   another_number_list.sort do | a, b |
-    if a == b
-      0
-    elsif a < b
-      1
-    elsif a > b
-      -1
-    end
-  end
+    b <=> a
 end
 
 
